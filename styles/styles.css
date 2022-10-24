@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  width: 1440px;
+  height: 596px;
+}
+.box {
+  margin: 120px 567px 60px 567px;
+}
+.box h1 {
+  width: 306px;
+  height: 47px;
+  font-size: 40px;
+}
+.box hr {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: 0;
+  margin: 20px 104px;
+}
+.text-center {
+  text-align: center;
+}
+.block-margine {
+  margin: 0 96px 120px 96px;
+}
+.section {
+  display: inline-block;
+  width: 296px;
+  height: 178px;
+  padding: 0 8px;
+}
+.section img {
+  margin: 0 98px 48px 98px;
+}
+.section p {
+  height: 28px;
+  font-size: 24px;
+}
+
