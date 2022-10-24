@@ -2,42 +2,49 @@
   padding: 0;
   margin: 0;
 }
-.wrapper {
+
+.advantages-block {
   width: 1440px;
   height: 596px;
 }
-.box {
+
+.heading-container {
   margin: 120px 567px 60px 567px;
 }
-.box h1 {
+
+.heading-container h1 {
   width: 306px;
   height: 47px;
   font-size: 40px;
+  text-align: center;
 }
-.box hr {
+
+.heading-container hr {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
   border: 0;
   margin: 20px 104px;
 }
-.text-center {
-  text-align: center;
+
+.advantages-content {
+  margin: 0 96px 120px 100px;
 }
-.block-margine {
-  margin: 0 96px 120px 96px;
-}
-.section {
+
+.advantages-content-item {
   display: inline-block;
   width: 296px;
   height: 178px;
-  padding: 0 8px;
+  padding: 0 2px;
 }
-.section img {
+
+.advantages-content-item img {
   margin: 0 98px 48px 98px;
 }
-.section p {
+
+.advantages-content-item p {
   height: 28px;
   font-size: 24px;
+  text-align: center;
 }
 
