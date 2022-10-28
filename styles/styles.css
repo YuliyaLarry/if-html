@@ -1,4 +1,4 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 
 * {
   padding: 0;
@@ -6,20 +6,26 @@
 }
 
 .advantages-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
   width: 1440px;
   height: 596px;
 }
 
 .heading-container {
-  margin: 120px 567px 60px 567px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
 }
 
 .heading-container h1 {
   font-family: "Roboto", sans-serif;
-  width: 306px;
-  height: 47px;
   font-size: 40px;
-  text-align: center;
+  font-weight: 500;
 }
 
 .heading-container hr {
@@ -27,28 +33,66 @@
   height: 4px;
   background-color: #f5bd41;
   border: 0;
-  margin: 20px 104px;
 }
 
 .advantages-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 96px 120px 96px;
+  justify-content: center;
+  column-gap: 16px;
 }
 
 .advantages-content-item {
   width: 296px;
   height: 178px;
-}
-
-.advantages-content-item img {
-  margin: 0 98px 48px 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 48px;
 }
 
 .advantages-content-item p {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   height: 28px;
   font-size: 24px;
-  text-align: center;
+}
+
+.footer {
+  width: 1064px;
+  height: 385px;
+  padding: 120px 272px 120px 104px;
+  background-color: #10367c;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 223px;
+}
+
+.footer-content h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 193px;
+  row-gap: 24px;
+}
+
+.copyright {
+  font-size: 14px;
 }
