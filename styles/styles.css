@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.heading-container h1 {
+.heading-container h2 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 500;
@@ -86,7 +86,14 @@
   font-weight: 500;
 }
 
-.text-block {
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 193px;
+  row-gap: 24px;
+}
+.footer-item ol{
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   min-width: 193px;
