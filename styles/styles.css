@@ -6,6 +6,62 @@
   font-family: "Roboto", sans-serif;
 }
 
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0 120px 0;
+  color: #ffffff;
+}
+
+.background-img {
+  background-image: url("../images/castelmezzano.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 1232px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+  background-image: url("../images/sprite.png");
+}
+
+.header-container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.stays-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  margin-top: 14px;
+}
+
+.stays-block hr {
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: 0;
+}
+
 .advantages-block {
   display: flex;
   flex-direction: column;
@@ -79,77 +135,18 @@
 .footer-item {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
   min-width: 193px;
 }
 .footer-item ol {
   display: flex;
   flex-direction: column;
+  row-gap: 24px;
   list-style-type: none;
   min-width: 193px;
 }
 
 .copyright {
   font-size: 14px;
-}
-
-.top-section {
-  min-height: 100vh;
-  width: 1440px;
-  padding: 50px 0 120px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-}
-
-.background-img {
-  background-image: url("../images/castelmezzano.png");
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
-.header {
-  width: 1232px;
-  height: 46px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.logo {
-  width: 205px;
-  height: 40px;
-  background-image: url("../images/sprite.png");
-}
-
-.header-container {
-  display: flex;
-  column-gap: 48px;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  column-gap: 24px;
-}
-
-.stays-block {
-  margin-top: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 8px;
-}
-
-.stays-block hr {
-  width: 50px;
-  height: 4px;
-  background-color: #f5bd41;
-  border: 0;
 }
 
 .night-icon {
