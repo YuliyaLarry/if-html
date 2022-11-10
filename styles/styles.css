@@ -5,6 +5,12 @@
   margin: 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advantages-block {
   display: flex;
   flex-direction: column;
@@ -37,8 +43,7 @@
 
 .advantages-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+    justify-content: center;
   column-gap: 16px;
 }
 
@@ -77,11 +82,10 @@
 
 .footer-content {
   display: flex;
-  flex-direction: row;
   column-gap: 223px;
 }
 
-.footer-content h4 {
+.list-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -126,7 +130,6 @@
   width: 1232px;
   height: 46px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -141,13 +144,11 @@
 
 .header-container {
   display: flex;
-  flex-direction: row;
   column-gap: 48px;
 }
 
 .header-content {
   display: flex;
-  flex-direction: row;
   align-items: center;
   column-gap: 24px;
 }
@@ -196,7 +197,6 @@
 
 .text-container {
   display: flex;
-  flex-direction: row;
   column-gap: 221px;
   padding: 100px 0 24px 24px;
   font-family: "Roboto", sans-serif;
