@@ -43,7 +43,7 @@
 
 .advantages-content {
   display: flex;
-    justify-content: center;
+  justify-content: center;
   column-gap: 16px;
 }
 
