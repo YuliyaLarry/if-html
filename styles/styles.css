@@ -3,12 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .svg-sprite {
@@ -17,14 +12,200 @@
   width: 0;
   height: 0;
 }
+/*for desktop*/
+.col-1{
+  width: 8.33%;
+}
+
+.col-2{
+  width: 16.66%;
+}
+
+.col-3{
+  width: 25%;
+}
+
+.col-4{
+  width: 33.33%;
+}
+
+.col-5{
+  width: 41.66%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-7{
+  width: 58.33%;
+}
+
+.col-8{
+  width: 66.66%;
+}
+
+.col-9{
+  width: 75%;
+}
+
+.col-10{
+  width: 83.33%;
+}
+
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0 120px 0;
+  color: #ffffff;
+}
+
+.background-img {
+  background-image: url("../images/castelmezzano.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1232px;
+  height: 46px;
+  font-size: 24px;
+}
+
+.header__logo svg {
+  width: 205px;
+  height: 40px;
+}
+
+.header__container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.header__content--stays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  margin-top: 14px;
+}
+
+.header__content--stays hr {
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: 0;
+}
+
+.header__night-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.header__account-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.top-section__content {
+  display: flex;
+  flex-direction: column;
+  width: 1232px;
+  margin-top: 196px;
+}
+
+.top-section__content h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.top-section__text {
+  display: flex;
+  flex-direction: row;
+  column-gap: 221px;
+  padding: 100px 0 24px 24px;
+  font-size: 18px;
+}
+
+.top-section__form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 3px;
+  border-color: #f3f3f4;
+}
+
+.top-section__form * {
+  height: 64px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #383838;
+  text-align: center;
+}
+
+.top-section__form button {
+  width: 192px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #3077c6;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.top-section__form-city {
+  border: none;
+  width: 438px;
+  padding-left: 24px;
+  text-align: left;
+}
+
+.top-section__form-calendar {
+  width: 253px;
+  height: 58px;
+  border: 3px solid #f5bd41;
+}
+
+.top-section__form-quantity {
+  border: none;
+  width: 305px;
+}
+
+.top-section__apps {
+  display: flex;
+  column-gap: 16px;
+  width: 271px;
+  height: 40px;
+  margin-top: 120px;
+}
+
 .advantages {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 80px;
-  width: 1440px;
-  height: 596px;
+  padding: 120px 0;
 }
 
 .heading-container {
@@ -35,7 +216,6 @@
 }
 
 .heading-container h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 500;
 }
@@ -63,20 +243,14 @@
 }
 
 .advantages__item-offer {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   height: 28px;
   font-size: 24px;
 }
 
 .footer {
-  width: 1064px;
-  height: 385px;
   padding: 120px 272px 120px 104px;
   background-color: #10367c;
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
-  font-weight: 400;
   color: #ffffff;
 }
 
@@ -91,175 +265,25 @@
   column-gap: 223px;
 }
 
-.list-heading {
-  font-family: "Roboto", sans-serif;
+.footer__item--list-heading {
   font-weight: 500;
 }
 
 .footer__item {
   display: flex;
   flex-direction: column;
-  min-width: 193px;
   row-gap: 24px;
+  min-width: 193px;
 }
 
 .footer__item--list {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   min-width: 193px;
   row-gap: 24px;
+  list-style-type: none;
 }
 
 .footer__copyright {
   font-size: 14px;
-}
-
-.top-section {
-  min-height: 100vh;
-  width: 1440px;
-  padding: 50px 0 120px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-}
-
-.background-img {
-  background-image: url("../images/castelmezzano.png");
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
-.header {
-  width: 1232px;
-  height: 46px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.header__logo svg {
-  width: 205px;
-  height: 40px;
-}
-
-.header__container {
-  display: flex;
-  column-gap: 48px;
-}
-
-.header__content {
-  display: flex;
-  align-items: center;
-  column-gap: 24px;
-}
-
-.header__content--stays {
-  margin-top: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 8px;
-}
-
-.header__content--stays hr {
-  width: 50px;
-  height: 4px;
-  background-color: #f5bd41;
-  border: 0;
-}
-
-.header__night-icon svg {
-  width: 30px;
-  height: 30px;
-}
-
-.header__account-icon svg {
-  width: 40px;
-  height: 40px;
-}
-
-.top-section__content {
-  width: 1232px;
-  margin-top: 196px;
-  display: flex;
-  flex-direction: column;
-}
-
-.top-section__content h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
-}
-
-.top-section__text {
-  display: flex;
-  flex-direction: row;
-  column-gap: 221px;
-  padding: 100px 0 24px 24px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.top-section__form {
-  width: 1232px;
-  height: 64px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  border: 3px;
-  border-color: #f3f3f4;
-  display: flex;
-  justify-content: space-between;
-}
-
-.top-section__form * {
-  height: 64px;
-  border-radius: 8px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #383838;
-  text-align: center;
-}
-
-.top-section__form button {
-  width: 192px;
-  height: 64px;
-  border-radius: 8px;
-  background-color: #3077c6;
-  border: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color: #ffffff;
-}
-.top-section__form-city {
-  border: none;
-  width: 438px;
-  padding-left: 24px;
-  text-align: left;
-}
-
-.top-section__form-calendar {
-  width: 253px;
-  height: 58px;
-  border: 3px solid #f5bd41;
-}
-
-.top-section__form-quantity {
-  border: none;
-  width: 305px;
-}
-
-.top-section__apps {
-  width: 271px;
-  height: 40px;
-  margin-top: 120px;
-  display: flex;
-  column-gap: 16px;
 }
