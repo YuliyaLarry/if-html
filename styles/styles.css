@@ -6,6 +6,62 @@
   font-family: "Roboto", sans-serif;
 }
 
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0 120px 0;
+  color: #ffffff;
+}
+
+.background-img {
+  background-image: url("../images/castelmezzano.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 1232px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+  background-image: url("../images/sprite.png");
+}
+
+.header-container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.stays-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  margin-top: 14px;
+}
+
+.stays-block hr {
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: 0;
+}
+
 .advantages-block {
   display: flex;
   flex-direction: column;
@@ -79,7 +135,6 @@
 .footer-item {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
   min-width: 193px;
 }
 .footer-item ol {
@@ -92,4 +147,99 @@
 
 .copyright {
   font-size: 14px;
+}
+
+.night-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/sprite.png");
+  background-position: -205px;
+}
+
+.account-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/sprite.png");
+  background-position: -235px;
+}
+
+.top-section-content {
+  width: 1232px;
+  margin-top: 196px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section-content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.text-container {
+  display: flex;
+  column-gap: 221px;
+  padding: 100px 0 24px 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search {
+  width: 1232px;
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 3px;
+  border-color: #f3f3f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search * {
+  height: 64px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+  text-align: center;
+}
+
+.search button {
+  width: 192px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #3077c6;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+#city {
+  border: none;
+  width: 438px;
+  padding-left: 24px;
+  text-align: left;
+}
+
+#calendar {
+  width: 253px;
+  height: 58px;
+  border: 3px solid #f5bd41;
+}
+
+#quantity {
+  border: none;
+  width: 305px;
+}
+
+.apps {
+  width: 271px;
+  height: 40px;
+  margin-top: 120px;
+  background-image: url("../images/sprite.png");
+  background-position: right;
 }
