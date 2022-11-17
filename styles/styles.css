@@ -218,7 +218,8 @@
   justify-content: center;
   align-items: center;
   row-gap: 80px;
-  padding: 120px 0;
+  width: 1440px;
+  height: 596px;
 }
 
 .heading-container {
@@ -295,7 +296,6 @@
 .footer__item--list-heading {
   font-weight: 500;
 }
-
 
 .footer__item {
   display: flex;
