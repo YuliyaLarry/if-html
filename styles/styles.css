@@ -6,7 +6,161 @@
   font-family: "Roboto", sans-serif;
 }
 
-.advantages-block {
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0 120px 0;
+  color: #ffffff;
+}
+
+.background-img {
+  background-image: url("../images/castelmezzano.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1232px;
+  height: 46px;
+  font-size: 24px;
+}
+
+.header__logo svg {
+  width: 205px;
+  height: 40px;
+}
+
+.header__container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.header__content--stays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  margin-top: 14px;
+}
+
+.header__content--stays hr {
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: 0;
+}
+
+.header__night-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.header__account-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.top-section__content {
+  display: flex;
+  flex-direction: column;
+  width: 1232px;
+  margin-top: 196px;
+}
+
+.top-section__content h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.top-section__text {
+  display: flex;
+  flex-direction: row;
+  column-gap: 221px;
+  padding: 100px 0 24px 24px;
+  font-size: 18px;
+}
+
+.top-section__form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 3px;
+  border-color: #f3f3f4;
+}
+
+.top-section__form * {
+  height: 64px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #383838;
+  text-align: center;
+}
+
+.top-section__form button {
+  width: 192px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #3077c6;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.top-section__form-city {
+  border: none;
+  width: 438px;
+  padding-left: 24px;
+  text-align: left;
+}
+
+.top-section__form-calendar {
+  width: 253px;
+  height: 58px;
+  border: 3px solid #f5bd41;
+}
+
+.top-section__form-quantity {
+  border: none;
+  width: 305px;
+}
+
+.top-section__apps {
+  display: flex;
+  width: 271px;
+  height: 40px;
+  column-gap: 16px;
+  margin-top: 120px;
+}
+
+.google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.app-store {
+  width: 118px;
+  height: 40px;
+}
+
+.advantages {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,13 +188,13 @@
   border: 0;
 }
 
-.advantages-content {
+.advantages__content {
   display: flex;
   justify-content: center;
   column-gap: 16px;
 }
 
-.advantages-content-item {
+.advantages__item {
   width: 296px;
   height: 178px;
   display: flex;
@@ -49,7 +203,7 @@
   row-gap: 48px;
 }
 
-.advantages-content-item p {
+.advantages__item-offer {
   height: 28px;
   font-size: 24px;
 }
@@ -61,35 +215,35 @@
   color: #ffffff;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   flex-direction: column;
   row-gap: 64px;
 }
 
-.footer-content {
+.footer__content {
   display: flex;
   column-gap: 223px;
 }
 
-.list-heading {
+.footer__item--list-heading {
   font-weight: 500;
 }
 
-.footer-item {
+.footer__item {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
   min-width: 193px;
 }
-.footer-item ol {
+.footer__item--list {
   display: flex;
   flex-direction: column;
+  min-width: 193px;
   row-gap: 24px;
   list-style-type: none;
-  min-width: 193px;
 }
 
-.copyright {
+.footer__copyright {
   font-size: 14px;
 }
