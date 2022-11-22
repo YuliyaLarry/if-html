@@ -209,12 +209,18 @@
           fill="#fff"
         />
       </symbol>
+      <symbol viewBox="0 0 24 16" id="menu">
+        <path fill="#fff" d="M0 16h24v-2.667H0V16Zm0-6.667h24V6.667H0v2.666ZM0 0v2.667h24V0H0Z"/>
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="search">
+        <path fill="#BFBFBF" d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"/>
+      </symbol>
     </svg>
     <div class="top-section background-img">
-      <div class="header">
+      <div class="col-10 header">
         <div class="header__logo">
           <svg>
-            <use href="#logo"></use>
+            <use href="#logo"/>
           </svg>
         </div>
         <div class="header__container">
@@ -225,22 +231,27 @@
             </div>
             <p>Attractions</p>
           </div>
-          <div class="header__content">
+          <div class="header__icons">
             <div class="header__night-icon">
               <svg>
-                <use href="#night"></use>
+                <use href="#night"/>
               </svg>
             </div>
             <div class="header__account-icon">
               <svg>
-                <use href="#account"></use>
+                <use href="#account" />
               </svg>
+            </div>
+            <div class="header__menu">
+            <svg>
+              <use href="#menu"/>
+            </svg>
             </div>
           </div>
         </div>
       </div>
-      <div class="top-section__content">
-        <h1>
+      <div class="col-10 top-section__content">
+        <h1 class="col-6">
           Discover stays <br />
           to live, work or just relax
         </h1>
@@ -273,6 +284,20 @@
           <button>Search</button>
         </form>
       </div>
+      <div class="col-10 top-section__mobile">
+        <form class="mobile-form">
+          <label class="city-mobile" for="city-mobile">
+            <svg class="search-icon">
+              <use href="#search" />
+            </svg>
+            Your destination or hotel name</label>
+          <input
+                  id="city-mobile"
+                  type="text"
+                  name="city"
+          />
+        </form>
+      </div>
       <div class="top-section__apps">
         <a href="#">
           <svg class="google-play">
@@ -288,7 +313,7 @@
     </div>
     <div class="block advantages">
       <div class="heading-container">
-        <h1>What do we offer</h1>
+        <h2>What do we offer</h2>
         <hr />
       </div>
       <div class="advantages__content">
