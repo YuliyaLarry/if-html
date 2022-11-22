@@ -12,6 +12,60 @@
   width: 0;
   height: 0;
 }
+/*for desktop*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+:root {
+  --text-color: #ffffff;
+  --background-color: #10367c;
+  --hr-color: #f5bd41;
+}
+
 .top-section {
   display: flex;
   flex-direction: column;
@@ -19,7 +73,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 50px 0 120px 0;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .background-img {
@@ -59,11 +113,20 @@
   row-gap: 8px;
   margin-top: 14px;
 }
+.header__content a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.header__content button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
 
 .header__content--stays hr {
   width: 50px;
   height: 4px;
-  background-color: #f5bd41;
+  background-color: var(--hr-color);
   border: 0;
 }
 
@@ -100,7 +163,7 @@
 .top-section__form {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: var(--text-color);
   border-radius: 8px;
   border: 3px;
   border-color: #f3f3f4;
@@ -122,8 +185,9 @@
   border: none;
   font-size: 24px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--text-color);
 }
+
 .top-section__form-city {
   border: none;
   width: 438px;
@@ -134,7 +198,7 @@
 .top-section__form-calendar {
   width: 253px;
   height: 58px;
-  border: 3px solid #f5bd41;
+  border: 3px solid var(--hr-color);
 }
 
 .top-section__form-quantity {
@@ -144,8 +208,6 @@
 
 .top-section__apps {
   display: flex;
-  width: 271px;
-  height: 40px;
   column-gap: 16px;
   margin-top: 120px;
 }
@@ -154,7 +216,6 @@
   width: 135px;
   height: 40px;
 }
-
 .app-store {
   width: 118px;
   height: 40px;
@@ -184,23 +245,32 @@
 .heading-container hr {
   width: 100px;
   height: 4px;
-  background-color: #f5bd41;
+  background-color: var(--hr-color);
   border: 0;
 }
 
 .advantages__content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  column-gap: 16px;
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
 .advantages__item {
-  width: 296px;
-  height: 178px;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.advantages__item--svg {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  padding: 0 98px;
 }
 
 .advantages__item-offer {
@@ -209,21 +279,26 @@
 }
 
 .footer {
-  padding: 120px 272px 120px 104px;
-  background-color: #10367c;
+  background-color: var(--background-color);
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .footer__container {
   display: flex;
   flex-direction: column;
   row-gap: 64px;
+  padding: 120px 88px 120px 104px;
 }
 
 .footer__content {
   display: flex;
-  column-gap: 223px;
+}
+
+.footer__content--logo {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 .footer__item--list-heading {
@@ -234,16 +309,89 @@
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-  min-width: 193px;
 }
+
 .footer__item--list {
   display: flex;
   flex-direction: column;
-  min-width: 193px;
   row-gap: 24px;
   list-style-type: none;
 }
 
 .footer__copyright {
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .advantages {
+    padding: 0;
+    row-gap: 32px;
+    padding-top: 24px;
+  }
+
+  .heading-container h2 {
+    font-size: 28px;
+  }
+
+  .heading-container hr {
+    display: none;
+  }
+
+  .advantages__item {
+    row-gap: 0;
+  }
+
+  .advantages__item--svg {
+    max-width: 70px;
+    height: 70px;
+    padding-bottom: 16px;
+  }
+
+  .col-3 div {
+    margin-bottom: 32px;
+  }
+
+  .col-3:last-child div {
+    margin-bottom: 40px;
+  }
+
+  .advantages__item-offer {
+    font-size: 15px;
+  }
+
+  .footer__content--logo {
+    width: 98px;
+    height: 19px;
+    display: block;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0;
+    padding: 40px 0;
+  }
+
+  .footer__content div {
+    width: inherit;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .footer__item--list-heading {
+    text-decoration: underline;
+    padding: 40px 0 32px 0;
+    font-size: 15px;
+  }
+
+  .footer__item--list-item {
+    display: none;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
 }
