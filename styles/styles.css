@@ -89,7 +89,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  padding: 50px 0 120px 0;
+  padding: 50px 20px 120px 20px;
   color: var(--text-color);
 }
 
@@ -105,6 +105,8 @@
   align-items: center;
   height: 46px;
   font-size: 24px;
+  width: 100%;
+  max-width: 1232px;
 }
 
 .header__logo svg {
@@ -176,6 +178,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 196px;
+  width: 100%;
+  max-width: 1232px;
 }
 
 .top-section__content h1 {
@@ -274,7 +278,7 @@ h2 {
   position: relative;
 }
 
-h2:after {
+.heading-container__h2:after {
   content: "";
   display: block;
   position: absolute;
@@ -427,7 +431,7 @@ h2:after {
     font-size: 28px;
   }
 
-  h2:after {
+  .heading-container__h2:after {
     display: none;
   }
 
