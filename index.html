@@ -210,100 +210,151 @@
         />
       </symbol>
       <symbol viewBox="0 0 24 16" id="menu">
-        <path fill="#fff" d="M0 16h24v-2.667H0V16Zm0-6.667h24V6.667H0v2.666ZM0 0v2.667h24V0H0Z"/>
+        <path
+          fill="#fff"
+          d="M0 16h24v-2.667H0V16Zm0-6.667h24V6.667H0v2.666ZM0 0v2.667h24V0H0Z"
+        />
       </symbol>
       <symbol viewBox="0 0 16 16" id="search">
-        <path fill="#BFBFBF" d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"/>
+        <path
+          fill="#BFBFBF"
+          d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"
+        />
       </symbol>
     </svg>
     <div class="top-section background-img">
-      <div class="col-10 header">
+      <div class="col-14 header">
         <div class="header__logo">
           <svg>
-            <use href="#logo"/>
+            <use href="#logo" />
           </svg>
         </div>
         <div class="header__container">
           <div class="header__content">
             <div class="header__content header__content--stays">
               <a href="#">
-              <p>Stays</p>
+                <p>Stays</p>
               </a>
               <hr />
             </div>
             <a href="#">
-            <p>Attractions</p>
+              <p>Attractions</p>
             </a>
           </div>
           <div class="header__icons">
             <div class="header__night-icon">
               <button>
-              <svg>
-                <use href="#night"/>
-              </svg>
+                <svg>
+                  <use href="#night" />
+                </svg>
               </button>
             </div>
             <div class="header__account-icon">
               <button>
-              <svg>
-                <use href="#account" />
-              </svg>
+                <svg>
+                  <use href="#account" />
+                </svg>
               </button>
             </div>
             <div class="header__menu">
-            <svg>
-              <use href="#menu"/>
-            </svg>
+              <svg>
+                <use href="#menu" />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-10 top-section__content">
-        <h1 class="col-6">
+      <div class="top-section__content">
+        <h1>
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <div class="top-section__text">
-          <label for="city">Your destination or hotel name</label>
-          <label for="calendar">Check-in — Check-out</label>
+        <div class="top-section__container">
+          <div class="top-section__text">
+            <label for="city">Your destination or hotel name</label>
+            <label for="calendar">Check-in — Check-out</label>
+          </div>
+          <form class="top-section__form">
+            <input
+              class="top-section__form top-section__form-city"
+              id="city"
+              type="text"
+              name="city"
+              placeholder="New York"
+            />
+            <input
+              class="top-section__form top-section__form-calendar"
+              id="calendar"
+              type="text"
+              name="calendar"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+            />
+            <input
+              class="top-section__form top-section__form-quantity"
+              id="quantity"
+              type="text"
+              name="quantity"
+              placeholder="2 Adults — 0 Children — 1 Room"
+            />
+            <button>Search</button>
+          </form>
         </div>
-        <form class="top-section__form">
-          <input
-            class="top-section__form top-section__form-city"
-            id="city"
-            type="text"
-            name="city"
-            placeholder="New York"
-          />
-          <input
-            class="top-section__form top-section__form-calendar"
-            id="calendar"
-            type="text"
-            name="calendar"
-            placeholder="Tue 15 Sept — Sat 19 Sept"
-          />
-          <input
-            class="top-section__form top-section__form-quantity"
-            id="quantity"
-            type="text"
-            name="quantity"
-            placeholder="2 Adults — 0 Children — 1 Room"
-          />
-          <button>Search</button>
-        </form>
       </div>
       <div class="col-10 top-section__mobile">
         <form class="mobile-form">
-          <label class="city-mobile" for="city-mobile">
-            <svg class="search-icon">
-              <use href="#search" />
-            </svg>
-            Your destination or hotel name</label>
-          <input
-                  id="city-mobile"
-                  type="text"
-                  name="city"
-          />
+          <div class="mobile-form__city">
+            <label for="city-mobile">
+              <svg class="search-icon">
+                <use href="#search" />
+              </svg>
+              Your destination or hotel name</label
+            >
+            <input id="city-mobile" type="text" name="city" />
+          </div>
+          <div class="mobile-form__calendar">
+            <div class="mobile-form__check">
+              <label class="mobile-form__check-in" for="check-in">
+                <p>check-in-date</p>
+                Tue 15 Sept 2020</label
+              >
+              <input id="check-in" type="text" name="check-in" />
+            </div>
+            <div class="mobile-form__check">
+              <label class="mobile-form__check-out" for="check-out">
+                <p>check-in-date</p>
+                Sat 19 Sept 2020</label
+              >
+              <input id="check-out" type="text" name="check-out" />
+            </div>
+          </div>
+          <div class="mobile-form__quantity">
+            <div class="mobile-form-selection">
+              <div class="mobile-form__adult">
+                <label class="adult" for="adult">
+                  <p>Adults</p>
+                  2</label
+                >
+                <input id="adult" type="text" name="adult" />
+              </div>
+              <div class="mobile-form__children">
+                <label class="children" for="children">
+                  <p>Children</p>
+                  0</label
+                >
+                <input id="children" type="text" name="children" />
+              </div>
+              <div class="mobile-form__rooms">
+                <label class="rooms" for="rooms">
+                  <p>Rooms</p>
+                  1</label
+                >
+                <input id="rooms" type="text" name="rooms" />
+              </div>
+            </div>
+          </div>
+          <div class="mobile-form__button">
+            <button class="button">Search</button>
+          </div>
         </form>
       </div>
       <div class="top-section__apps">
@@ -325,7 +376,7 @@
         <hr />
       </div>
       <div class="advantages__content">
-        <div class="col-3">
+        <div class="col-4">
           <div class="advantages__item">
             <svg class="advantages__item advantages__item--svg">
               <use href="#headset"></use>
@@ -333,7 +384,7 @@
             <p class="advantages__item advantages__item-offer">Support 24/7</p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
           <div class="advantages__item">
             <svg class="advantages__item advantages__item--svg">
               <use href="#forum"></use>
@@ -343,7 +394,7 @@
             </p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
           <div class="advantages__item">
             <svg class="advantages__item advantages__item--svg">
               <use href="#devices"></use>
@@ -351,7 +402,7 @@
             <p class="advantages__item advantages__item-offer">Book online</p>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
           <div class="advantages__item">
             <svg class="advantages__item advantages__item--svg">
               <use href="#trumb-up"></use>
@@ -369,7 +420,7 @@
           <use href="#logo-mobile"></use>
         </svg>
         <div class="footer__content">
-          <div class="col-4 footer__item">
+          <div class="col-6 footer__item">
             <ol class="footer__item footer__item--list">
               <li class="footer__item footer__item--list-heading">About</li>
               <li class="footer__item footer__item--list-item">
@@ -380,7 +431,7 @@
               <li class="footer__item footer__item--list-item">Terms</li>
             </ol>
           </div>
-          <div class="col-4 footer__item">
+          <div class="col-6 footer__item">
             <ol class="footer__item footer__item--list">
               <li class="footer__item footer__item--list-heading">
                 Property types
@@ -395,7 +446,7 @@
               <li class="footer__item footer__item--list-item">Hostels</li>
             </ol>
           </div>
-          <div class="footer__item">
+          <div class="col-6 footer__item">
             <ol class="footer__item footer__item--list">
               <li class="footer__item footer__item--list-heading">Support</li>
               <li class="footer__item footer__item--list-item">
