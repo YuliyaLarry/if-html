@@ -265,7 +265,7 @@
   padding: 120px 0;
 }
 
-h2{
+h2 {
   font-size: 40px;
   font-weight: 500;
 }
@@ -314,15 +314,15 @@ h2:after {
   font-size: 24px;
 }
 
-.homes-section{
+.homes-section {
   display: flex;
   flex-direction: column;
   row-gap: 105px;
   align-items: center;
   padding: 120px 20px;
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
 }
-.homes-section__accommondation{
+.homes-section__accommondation {
   display: flex;
   /*flex-wrap: wrap;*/
   column-gap: 16px;
@@ -332,13 +332,13 @@ h2:after {
   box-sizing: border-box;
 }
 
-.homes-section__hotels{
+.homes-section__hotels {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
 
-.homes-section__hotels img{
+.homes-section__hotels img {
   width: 100%;
   max-width: 296px;
 }
@@ -348,7 +348,7 @@ h2:after {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #F3F3F4;
+  background: #f3f3f4;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -362,11 +362,11 @@ h2:after {
 .circle img {
   width: 9px;
   height: 21px;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
 }
 
-.location{
-  color: #BFBFBF;
+.location {
+  color: #bfbfbf;
 }
 
 .footer {
@@ -423,7 +423,7 @@ h2:after {
     padding-top: 24px;
   }
 
-h2 {
+  h2 {
     font-size: 28px;
   }
 
@@ -658,15 +658,15 @@ h2 {
     margin-bottom: 40px;
   }
 
-  .homes-section{
+  .homes-section {
     padding: 40px 16px;
     row-gap: 32px;
   }
 
-  .homes-section__hotels{
+  .homes-section__hotels {
     row-gap: 6px;
   }
-  .homes-section__hotels img{
+  .homes-section__hotels img {
     width: 156px;
     height: 156px;
   }
@@ -678,17 +678,17 @@ h2 {
     left: 100%;
     transform: translate(-50%, -50%);
   }
-  .circle img{
+  .circle img {
     width: 5px;
     height: 13px;
   }
 
-  .homes-section__hotels p{
+  .homes-section__hotels p {
     font-size: 12px;
   }
 
-    .hostel{
-    display:none;
+  .hostel {
+    display: none;
   }
 }
 
@@ -697,6 +697,7 @@ h2 {
     width: 100%;
   }
 
-  .villa{
+  .villa {
     display: none;
   }
+}
