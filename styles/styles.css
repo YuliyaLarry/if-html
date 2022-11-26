@@ -133,11 +133,12 @@
   background-color: transparent;
 }
 
-.header__conten--link{
+.header__conten--link {
   position: relative;
 }
+
 .header__conten--link:hover:after {
-  content: '' ;
+  content: "";
   display: block;
   position: absolute;
   top: 40px;
@@ -264,15 +265,17 @@
   padding: 120px 0;
 }
 
-
-.heading-container h2 {
+h2{
   font-size: 40px;
   font-weight: 500;
+}
+
+.heading-container__h2 {
   position: relative;
 }
 
 h2:after {
-  content: '' ;
+  content: "";
   display: block;
   position: absolute;
   top: 68px;
@@ -281,7 +284,7 @@ h2:after {
   height: 4px;
   background-color: var(--border-color);
   transform: translate(-50%);
- }
+}
 
 .advantages__content {
   display: flex;
@@ -309,6 +312,61 @@ h2:after {
 
 .advantages__item-offer {
   font-size: 24px;
+}
+
+.homes-section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 105px;
+  align-items: center;
+  padding: 120px 20px;
+  background-color: #EAF0F9;
+}
+.homes-section__accommondation{
+  display: flex;
+  /*flex-wrap: wrap;*/
+  column-gap: 16px;
+  font-size: 24px;
+  color: var(--button-color);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.homes-section__hotels{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.homes-section__hotels img{
+  width: 100%;
+  max-width: 296px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #F3F3F4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 148px;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.circle img {
+  width: 9px;
+  height: 21px;
+  background-color: #F3F3F4;
+}
+
+.location{
+  color: #BFBFBF;
 }
 
 .footer {
@@ -365,11 +423,11 @@ h2:after {
     padding-top: 24px;
   }
 
-  .heading-container h2 {
+h2 {
     font-size: 28px;
   }
 
-  h2:after{
+  h2:after {
     display: none;
   }
 
@@ -599,4 +657,46 @@ h2:after {
     margin-top: 32px;
     margin-bottom: 40px;
   }
+
+  .homes-section{
+    padding: 40px 16px;
+    row-gap: 32px;
+  }
+
+  .homes-section__hotels{
+    row-gap: 6px;
+  }
+  .homes-section__hotels img{
+    width: 156px;
+    height: 156px;
+  }
+
+  .circle {
+    width: 28px;
+    height: 28px;
+    top: 78px;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .circle img{
+    width: 5px;
+    height: 13px;
+  }
+
+  .homes-section__hotels p{
+    font-size: 12px;
+  }
+
+    .hostel{
+    display:none;
+  }
 }
+
+@media (max-width: 550px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .villa{
+    display: none;
+  }
