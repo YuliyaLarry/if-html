@@ -97,6 +97,7 @@
   background-image: url("../images/castelmezzano.png");
   background-position-x: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
@@ -135,11 +136,11 @@
   background-color: transparent;
 }
 
-.header__conten--link {
+.header__content--link {
   position: relative;
 }
 
-.header__conten--link:hover:after {
+.header__content--link:hover:after {
   content: "";
   display: block;
   position: absolute;
