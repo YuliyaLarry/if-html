@@ -223,145 +223,146 @@
       </symbol>
     </svg>
     <div class="top-section background-img">
-      <div class="header">
-        <div class="header__logo">
-          <svg>
-            <use href="#logo" />
-          </svg>
-        </div>
-        <div class="header__container">
-          <div class="header__content">
-            <div class="header__content header__content--stays">
-              <a href="#" class="header__content--link"> Stays </a>
-            </div>
-            <a href="#" class="header__content--link"> Attractions </a>
+      <div class="container">
+        <div class="header">
+          <div class="header__logo">
+            <svg>
+              <use href="#logo" />
+            </svg>
           </div>
-          <div class="header__icons">
-            <div class="header__night-icon">
-              <button>
-                <svg>
-                  <use href="#night" />
-                </svg>
-              </button>
+          <div class="header__container">
+            <div class="header__content">
+              <a href="#" class="header__content--link">Stays</a>
+              <a href="#" class="header__content--link">Attractions</a>
             </div>
-            <div class="header__account-icon">
-              <button>
-                <svg>
-                  <use href="#account" />
-                </svg>
+            <div class="header__icons">
+                <button class="header__night-icon">
+                  <svg>
+                    <use href="#night" />
+                  </svg>
               </button>
-            </div>
-            <div class="header__menu">
-              <button>
-                <svg>
-                  <use href="#menu" />
-                </svg>
+                <button class="header__account-icon">
+                  <svg>
+                    <use href="#account" />
+                  </svg>
+              <button class="header__menu">
+                  <svg>
+                    <use href=" #menu" />
+                  </svg>
               </button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="top-section__content">
-        <h1>
-          Discover stays <br />
-          to live, work or just relax
-        </h1>
-        <div class="top-section__container">
-          <div class="top-section__text">
-            <label for="city">Your destination or hotel name</label>
-            <label for="calendar">Check-in — Check-out</label>
+        <div class="top-section__content">
+          <h1>
+            Discover stays <br />
+            to live, work or just relax
+          </h1>
+          <div class="top-section__container">
+            <form class="top-section__form">
+              <div class="form-city">
+                <label for="city">Your destination or hotel name</label>
+              <input
+                class="top-section__form top-section__form-city"
+                id="city"
+                type="text"
+                name="city"
+                placeholder="New York"
+              />
+              </div>
+              <div class="form-calendar">
+              <label for="calendar">Check-in — Check-out</label>
+              <input
+                class="top-section__form top-section__form-calendar"
+                id="calendar"
+                type="text"
+                name="calendar"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+              />
+              </div>
+              <input
+                class="top-section__form top-section__form-quantity"
+                id="quantity"
+                type="text"
+                name="quantity"
+                placeholder="2 Adults — 0 Children — 1 Room"
+              />
+              <button>Search</button>
+            </form>
           </div>
-          <form class="top-section__form">
-            <input
-              class="top-section__form top-section__form-city"
-              id="city"
-              type="text"
-              name="city"
-              placeholder="New York"
-            />
-            <input
-              class="top-section__form top-section__form-calendar"
-              id="calendar"
-              type="text"
-              name="calendar"
-              placeholder="Tue 15 Sept — Sat 19 Sept"
-            />
-            <input
-              class="top-section__form top-section__form-quantity"
-              id="quantity"
-              type="text"
-              name="quantity"
-              placeholder="2 Adults — 0 Children — 1 Room"
-            />
-            <button>Search</button>
+        </div>
+        <div class="col-10 top-section__mobile">
+          <form class="mobile-form">
+            <div class="mobile-form__city">
+              <label for="city-mobile">
+                <svg class="search-icon">
+                  <use href="#search" />
+                </svg>
+                Your destination or hotel name</label
+              >
+              <input id="city-mobile" type="text" name="city" />
+            </div>
+            <div class="mobile-form__calendar">
+              <div class="mobile-form__check">
+                <label class="mobile-form__check-in" for="check-in">
+                  <p>check-in-date</p>
+                  Tue 15 Sept 2020</label
+                >
+                <input id="check-in" type="text" name="check-in" />
+              </div>
+              <div class="mobile-form__check">
+                <label class="mobile-form__check-out" for="check-out">
+                  <p>check-in-date</p>
+                  Sat 19 Sept 2020</label
+                >
+                <input id="check-out" type="text" name="check-out" />
+              </div>
+            </div>
+            <div class="mobile-form__quantity">
+              <div class="mobile-form-selection">
+                <div class="mobile-form__adult">
+                  <label class="adult" for="adult">
+                    <p>Adults</p>
+                    2</label
+                  >
+                  <input id="adult" type="text" name="adult" />
+                </div>
+                <div class="mobile-form__children">
+                  <label class="children" for="children">
+                    <p>Children</p>
+                    0</label
+                  >
+                  <input id="children" type="text" name="children" />
+                </div>
+                <div class="mobile-form__rooms">
+                  <label class="rooms" for="rooms">
+                    <p>Rooms</p>
+                    1</label
+                  >
+                  <input id="rooms" type="text" name="rooms" />
+                </div>
+              </div>
+            </div>
+            <div class="mobile-form__button">
+              <button class="button">Search</button>
+            </div>
           </form>
         </div>
-      </div>
-      <div class="col-10 top-section__mobile">
-        <form class="mobile-form">
-          <div class="mobile-form__city">
-            <label for="city-mobile">
-              <svg class="search-icon">
-                <use href="#search" />
-              </svg>
-              Your destination or hotel name</label>
-            <input id="city-mobile" type="text" name="city" />
-          </div>
-          <div class="mobile-form__calendar">
-            <div class="mobile-form__check">
-              <label class="mobile-form__check-in" for="check-in">
-                <p>check-in-date</p>
-                Tue 15 Sept 2020</label>
-              <input id="check-in" type="text" name="check-in" />
-            </div>
-            <div class="mobile-form__check">
-              <label class="mobile-form__check-out" for="check-out">
-                <p>check-in-date</p>
-                Sat 19 Sept 2020</label>
-              <input id="check-out" type="text" name="check-out" />
-            </div>
-          </div>
-          <div class="mobile-form__quantity">
-            <div class="mobile-form-selection">
-              <div class="mobile-form__adult">
-                <label class="adult" for="adult">
-                  <p>Adults</p>
-                  2</label>
-                <input id="adult" type="text" name="adult" />
-              </div>
-              <div class="mobile-form__children">
-                <label class="children" for="children">
-                  <p>Children</p>
-                  0</label>
-                <input id="children" type="text" name="children" />
-              </div>
-              <div class="mobile-form__rooms">
-                <label class="rooms" for="rooms">
-                  <p>Rooms</p>
-                  1</label>
-                <input id="rooms" type="text" name="rooms" />
-              </div>
-            </div>
-          </div>
-          <div class="mobile-form__button">
-            <button class="button">Search</button>
-          </div>
-        </form>
-      </div>
-      <div class="top-section__apps">
-        <a href="#">
-          <svg class="google-play">
-            <use href="#google-play" />
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="app-store">
-            <use href="#app-store" />
-          </svg>
-        </a>
+        <div class="top-section__apps">
+          <a href="#">
+            <svg class="google-play">
+              <use href="#google-play" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="app-store">
+              <use href="#app-store" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="block advantages">
+    <div class="container advantages">
       <div class="heading-container">
         <h2 class="heading-container__h2">What do we offer</h2>
       </div>
@@ -404,7 +405,7 @@
         </div>
       </div>
     </div>
-    <div class="homes-section">
+    <div class="homes-section container">
       <h2>Homes guests loves</h2>
       <div class="homes-section__accommondation">
         <div class="homes-section__hotels hotel">
@@ -436,6 +437,7 @@
       </div>
     </div>
     <div class="footer">
+      <div class="container">
       <div class="footer__container">
         <svg class="footer__content footer__content--logo">
           <use href="#logo-mobile"></use>
@@ -480,6 +482,7 @@
         <div class="footer__copyright">
           <p>&copy; 2022Triphouse, Inc. All rights reserved</p>
         </div>
+      </div>
       </div>
     </div>
   </body>
