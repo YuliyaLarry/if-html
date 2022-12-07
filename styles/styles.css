@@ -230,7 +230,6 @@ input:focus {
   border: 3px solid transparent;
 }
 
-
 .top-section__form input:focus {
   border: 3px solid var(--border-color);
 }
@@ -242,13 +241,13 @@ input:focus {
   text-align: left;
 }
 
-.form-city{
+.form-city {
   position: relative;
   max-width: 498px;
   width: 100%;
 }
 
-.form-city label{
+.form-city label {
   position: absolute;
   top: -30px;
   left: 25px;
@@ -262,13 +261,13 @@ input:focus {
   width: 100%;
 }
 
-.form-calendar{
+.form-calendar {
   position: relative;
   max-width: 253px;
   width: 100%;
 }
 
-.form-calendar label{
+.form-calendar label {
   position: absolute;
   top: -30px;
   left: 10px;
@@ -635,7 +634,6 @@ h2 {
   .mobile-form__calendar input {
     width: -webkit-fill-available;
   }
-
 
   .mobile-form-selection {
     display: flex;
