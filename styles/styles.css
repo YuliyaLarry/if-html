@@ -497,10 +497,14 @@ h2 {
   height: 200px;
   background-color: #EAF0F9;
   margin: auto;
+  position: relative;
 }
 
 .sign-up-section__container{
   display: flex;
+  column-gap: 24px;
+  padding-top: 52px;
+  padding-left: 24px;
 }
 
 .sign-up-section__sign-up-svg {
@@ -511,11 +515,15 @@ h2 {
 .sign-up-section__close-svg{
   width: 26px;
   height: 26px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .sign-up-section__content{
 display: flex;
   flex-direction: column;
+  row-gap: 20px;
 }
 
 .sign-up-section__content button{
