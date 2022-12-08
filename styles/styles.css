@@ -398,43 +398,35 @@ h2 {
   row-gap: 65px;
 }
 
-.destinations-form {
+.destinations-buttons {
   display: flex;
-  position: relative;
-  font-size: 24px;
-  /*width: 88%;*/
+  max-width: 622px;
+  width: 100%;
   padding-top: 105px;
-  /*padding-left: 14%;*/
 }
 
-.destinations-form label {
-  position: absolute;
-  padding: 17px 52px;
-}
-
-.destinations-form input {
-  width: 192px;
+.destinations-buttons button {
+  width: 30%;
   height: 64px;
+  font-size: 24px;
   border-radius: 8px;
   background-color: #f3f3f4;
   border: none;
 }
-.regions {
+
+.destinations-buttons button:focus {
+  background-color: var(--button-color);
   color: var(--text-color);
 }
-#regions {
-  background-color: var(--button-color);
-}
 
-.destinations-form__places label {
-  padding: 17px 25px;
-}
-
-.destinations-form__places input {
-  width: 238px;
+#places {
+  width: 40%;
   height: 64px;
 }
 
+.places-mobile{
+  display: none;
+}
 .destinations__section {
   display: flex;
   column-gap: 16px;
@@ -585,6 +577,10 @@ display: flex;
   flex-direction: column;
   row-gap: 24px;
   list-style-type: none;
+}
+
+.footer__item--list-item{
+  cursor: pointer;
 }
 
 .footer__copyright {
