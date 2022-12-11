@@ -5,6 +5,7 @@
   --background-color: #10367c;
   --border-color: #f5bd41;
   --button-color: #3077c6;
+  --line-width: 50px;
 }
 
 * {
@@ -149,6 +150,19 @@ button {
 
 .header__content--link {
   position: relative;
+}
+
+.header__content--link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 50px;
+  height: 4px;
+  background-color: var(--border-color);
+  transition: transform 200ms;
+  transform: scale(0);
 }
 
 .header__content--link:hover:after {
@@ -995,7 +1009,7 @@ h2 {
     background-color: #ffffff;
   }
 
-  .sign-up-section__container{
+  .sign-up-section__container {
     padding: 24px 32px;
   }
 
@@ -1012,6 +1026,7 @@ h2 {
     height: 16px;
     top: 50%;
     left: 32px;
+    transform: translate(0, -50%);
   }
 
   .sign-up-section__content {
